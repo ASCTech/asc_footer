@@ -1,0 +1,6 @@
+name = "ASC Footer"
+description = "ASC Footer Contact Information and Links"
+core = "7.x"
+package = "ASC"
+version = "7.x.-1.x"
+files[] = asc_footer.module
