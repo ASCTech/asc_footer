@@ -12,6 +12,11 @@
 <?php } ?>
 </p>
 <?php } ?>
+<?php if ($E_Mail != '') { ?>
+<p id="footer-email">
+  E-Mail: <a href="mailto:<?php print $E_Mail ?>" title="E-Mail Us"><?php print $E_Mail ?></a>
+</p>
+<?php } ?>
 <?php if ($Phone != '') { ?>
 <p id="footer-phone">
   Phone: <?php print $Phone ?><br />
@@ -20,24 +25,19 @@
 <?php } ?>
 </p>
 <?php } ?>
-<?php if ($E_Mail != '') { ?>
-<p id="footer-email">
-  E-Mail: <a href="mailto:<?php print $E_Mail ?>" title="E-Mail Us"><?php print $E_Mail ?></a>
-</p>
-<?php } ?>
 <?php if ($Link_1_Text != '') { ?>
 <p id="footer-link-1">
-  <a href="<?php print $Link_1_URL ?>"><?php print $Link_1_Text ?></a>
+  <strong><a href="<?php print $Link_1_URL ?>"><?php print $Link_1_Text ?></a></strong>
 </p>
 <?php } ?>
 <?php if ($Link_2_Text != '') { ?>
 <p id="footer-link-2">
-  <a href="<?php print $Link_2_URL ?>"><?php print $Link_2_Text ?></a>
+  <strong><a href="<?php print $Link_2_URL ?>"><?php print $Link_2_Text ?></a></strong>
 </p>
 <?php } ?>
 <?php if ($Link_3_Text != '') { ?>
 <p id="footer-link-3">
-  <a href="<?php print $Link_3_URL ?>"><?php print $Link_3_Text ?></a>
+  <strong><a href="<?php print $Link_3_URL ?>"><?php print $Link_3_Text ?></a></strong>
 </p>
 <?php } ?>
 <p id="footer-privacy">

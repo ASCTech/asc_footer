@@ -136,7 +136,6 @@ function asc_footer_block_view($delta = '') {
 function asc_footer_theme() {
   return array(
     'asc_footer_block' => array(
-      'variables' => array('address1' => '123123 st'),
       'template' => 'asc_footer_block',
     ),
   );
