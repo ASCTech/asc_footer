@@ -78,7 +78,7 @@ function asc_footer_get_fields() {
     'zip' => variable_get($prefix . 'Zip'),
     'phone' => variable_get($prefix . 'Phone'),
     'fax' => variable_get($prefix . 'Fax'),
-    'e_Mail' => variable_get($prefix . 'E_Mail'),
+    'e_mail' => variable_get($prefix . 'E_Mail'),
     'link_1_Text' => variable_get($prefix . 'Link_1_Text'),
     'link_1_URL' => variable_get($prefix . 'Link_1_URL'),
     'link_2_Text' => variable_get($prefix . 'Link_2_Text'),
