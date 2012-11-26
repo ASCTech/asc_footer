@@ -41,8 +41,8 @@
 </p>
 <?php } ?>
 <p id="footer-privacy">
-  <strong><a href="http://artsandsciences.osu.edu/privacy-policy" title="Privacy Policy">Privacy Policy</a></strong><br />
-  <strong><a href="/contact" title="Visit the contact page">Questions, Feedback, Acccessibility</a></strong>
+  <a href="http://artsandsciences.osu.edu/privacy-policy" title="Privacy Policy">Privacy Policy</a><br>
+  <a href="/contact" title="Visit the contact page">Questions, Feedback, Acccessibility</a>
   <a href="/contact" title="Accessibility">
     <img src="/profiles/asc/themes/q7/icons/access.png" alt="Accessibility" id="footer-accessibility-icon" width="20" height="20" />
   </a>
