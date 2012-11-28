@@ -27,17 +27,17 @@
 <?php } ?>
 <?php if ($link_1_Text != '') { ?>
 <p id="footer-link-1">
-  <strong><a href="<?php print $link_1_URL ?>"><?php print $link_1_Text ?></a></strong>
+  <strong><a href="<?php print $link_1_URL ?>" title="<?php print $link_1_Description ?>"><?php print $link_1_Text ?></a></strong>
 </p>
 <?php } ?>
 <?php if ($link_2_Text != '') { ?>
 <p id="footer-link-2">
-  <strong><a href="<?php print $link_2_URL ?>"><?php print $link_2_Text ?></a></strong>
+  <strong><a href="<?php print $link_2_URL ?>" title="<?php print $link_2_Description ?>"><?php print $link_2_Text ?></a></strong>
 </p>
 <?php } ?>
 <?php if ($link_3_Text != '') { ?>
 <p id="footer-link-3">
-  <strong><a href="<?php print $link_3_URL ?>"><?php print $link_3_Text ?></a></strong>
+  <strong><a href="<?php print $link_3_URL ?>" title="<?php print $link_3_Description ?>"><?php print $link_3_Text ?></a></strong>
 </p>
 <?php } ?>
 <p id="footer-privacy">
