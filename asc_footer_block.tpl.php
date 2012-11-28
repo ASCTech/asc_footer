@@ -27,23 +27,23 @@
 <?php } ?>
 <?php if ($link_1_Text != '') { ?>
 <p id="footer-link-1">
-  <strong><a href="<?php print $link_1_URL ?>" title="<?php print $link_1_Text ?>"><?php print $link_1_Text ?></a></strong>
+  <strong><a href="<?php print $link_1_URL ?>" title="<?php print $link_1_Desc ?>"><?php print $link_1_Text ?></a></strong>
 </p>
 <?php } ?>
 <?php if ($link_2_Text != '') { ?>
 <p id="footer-link-2">
-  <strong><a href="<?php print $link_2_URL ?>" title="<?php print $link_2_Text ?>"><?php print $link_2_Text ?></a></strong>
+  <strong><a href="<?php print $link_2_URL ?>" title="<?php print $link_2_Desc ?>"><?php print $link_2_Text ?></a></strong>
 </p>
 <?php } ?>
 <?php if ($link_3_Text != '') { ?>
 <p id="footer-link-3">
-  <strong><a href="<?php print $link_3_URL ?>" title="<?php print $link_3_Text ?>"><?php print $link_3_Text ?></a></strong>
+  <strong><a href="<?php print $link_3_URL ?>" title="<?php print $link_3_Desc ?>"><?php print $link_3_Text ?></a></strong>
 </p>
 <?php } ?>
 <p id="footer-privacy">
   <a href="http://artsandsciences.osu.edu/privacy-policy" title="Privacy Policy">Privacy Policy</a><br>
   <a href="/contact" title="Visit the contact page">Questions, Feedback, Acccessibility</a>
-  <a href="/contact" title="Accessibility">
+  <a href="/contact" title="Accessibility" class="no-decoration">
     <img src="/profiles/asc/themes/q7/icons/access.png" alt="Accessibility" id="footer-accessibility-icon" width="20" height="20" />
   </a>
 </p>
