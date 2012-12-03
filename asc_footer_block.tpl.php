@@ -1,43 +1,43 @@
-<?php if ($address_1 != '') { ?>
-<p id="footer-address">
+<?php if ($Address_1 != '') { ?>
+<p id="footer-Address">
   <strong><a href="/contact">Contact Us</a></strong><br />
-<?php if ($address_1 != '') { ?>
-  <?php print $address_1 ?><br />
+<?php if ($Address_1 != '') { ?>
+  <?php print $Address_1 ?><br />
 <?php } ?>
-<?php if ($address_2 != '') { ?>
-  <?php print $address_2 ?><br />
+<?php if ($Address_2 != '') { ?>
+  <?php print $Address_2 ?><br />
 <?php } ?>
-<?php if ($city != '') { ?>
-  <?php print $city ?> <?php print $state ?>, <?php print $zip ?>
+<?php if ($City != '') { ?>
+  <?php print $City ?> <?php print $state ?>, <?php print $zip ?>
 <?php } ?>
 </p>
 <?php } ?>
-<?php if ($e_mail != '') { ?>
+<?php if ($E_mail != '') { ?>
 <p id="footer-email">
-  E-Mail: <a href="mailto:<?php print $e_mail ?>" title="E-Mail Us"><?php print $e_mail ?></a>
+  E-Mail: <a href="mailto:<?php print $E_mail ?>" title="E-Mail Us"><?php print $E_mail ?></a>
 </p>
 <?php } ?>
-<?php if ($phone != '') { ?>
+<?php if ($Phone != '') { ?>
 <p id="footer-phone">
-  Phone: <?php print $phone ?><br />
-<?php if ($fax != '') { ?>
-  Fax: <?php print $fax ?>
+  Phone: <?php print $Phone ?><br />
+<?php if ($Fax != '') { ?>
+  Fax: <?php print $Fax ?>
 <?php } ?>
 </p>
 <?php } ?>
-<?php if ($link_1_Text != '') { ?>
+<?php if ($Link_1_Text != '') { ?>
 <p id="footer-link-1">
-  <strong><a href="<?php print $link_1_URL ?>" title="<?php print $link_1_Desc ?>"><?php print $link_1_Text ?></a></strong>
+  <strong><a href="<?php print $Link_1_URL ?>" title="<?php print $Link_1_Desc ?>"><?php print $Link_1_Text ?></a></strong>
 </p>
 <?php } ?>
-<?php if ($link_2_Text != '') { ?>
+<?php if ($Link_2_Text != '') { ?>
 <p id="footer-link-2">
-  <strong><a href="<?php print $link_2_URL ?>" title="<?php print $link_2_Desc ?>"><?php print $link_2_Text ?></a></strong>
+  <strong><a href="<?php print $Link_2_URL ?>" title="<?php print $Link_2_Desc ?>"><?php print $Link_2_Text ?></a></strong>
 </p>
 <?php } ?>
-<?php if ($link_3_Text != '') { ?>
+<?php if ($Link_3_Text != '') { ?>
 <p id="footer-link-3">
-  <strong><a href="<?php print $link_3_URL ?>" title="<?php print $link_3_Desc ?>"><?php print $link_3_Text ?></a></strong>
+  <strong><a href="<?php print $Link_3_URL ?>" title="<?php print $Link_3_Desc ?>"><?php print $Link_3_Text ?></a></strong>
 </p>
 <?php } ?>
 <p id="footer-privacy">
