@@ -8,7 +8,7 @@
   <?php print $Address_2 ?><br />
 <?php } ?>
 <?php if ($City != '') { ?>
-  <?php print $City ?> <?php print $state ?>, <?php print $zip ?>
+  <?php print $City ?> <?php print $State ?>, <?php print $Zip ?>
 <?php } ?>
 </p>
 <?php } ?>
