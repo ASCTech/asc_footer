@@ -1,6 +1,6 @@
 <?php if ($Address_1 != '') { ?>
 <p id="footer-Address">
-  <strong><a href="/contact">Contact Us</a></strong><br />
+  <a href="/contact">Contact Us</a><br />
 <?php if ($Address_1 != '') { ?>
   <?php print $Address_1 ?><br />
 <?php } ?>
@@ -27,17 +27,17 @@
 <?php } ?>
 <?php if ($Link_1_Text != '') { ?>
 <p id="footer-link-1">
-  <strong><a href="<?php print $Link_1_URL ?>" title="<?php print $Link_1_Desc ?>"><?php print $Link_1_Text ?></a></strong>
+  <a href="<?php print $Link_1_URL ?>" title="<?php print $Link_1_Desc ?>"><?php print $Link_1_Text ?></a>
 </p>
 <?php } ?>
 <?php if ($Link_2_Text != '') { ?>
 <p id="footer-link-2">
-  <strong><a href="<?php print $Link_2_URL ?>" title="<?php print $Link_2_Desc ?>"><?php print $Link_2_Text ?></a></strong>
+  <a href="<?php print $Link_2_URL ?>" title="<?php print $Link_2_Desc ?>"><?php print $Link_2_Text ?></a>
 </p>
 <?php } ?>
 <?php if ($Link_3_Text != '') { ?>
 <p id="footer-link-3">
-  <strong><a href="<?php print $Link_3_URL ?>" title="<?php print $Link_3_Desc ?>"><?php print $Link_3_Text ?></a></strong>
+  <a href="<?php print $Link_3_URL ?>" title="<?php print $Link_3_Desc ?>"><?php print $Link_3_Text ?></a>
 </p>
 <?php } ?>
 <p id="footer-privacy">
