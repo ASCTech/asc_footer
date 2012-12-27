@@ -13,8 +13,6 @@
  * The widget is the form element used to receive input from the user
  * when the field is being populated.
  *
- * @see field_types
- * @see field
  */
 
 /**
@@ -34,7 +32,7 @@ function asc_footer_menu() {
 }
 
 /*
- * Implements hook_permission()
+ * Implements hook_permission().
  */
 function asc_footer_permission() {
   return array(
@@ -50,7 +48,7 @@ function asc_footer_permission() {
  */
 function asc_footer_form($form_state) {
   $form = array();
-  $fields = asc_footer_get_fields();
+  $fields = _asc_footer_get_fields();
 
   foreach ($fields as $field => $value) {
     $form[$field] = array(
@@ -62,49 +60,53 @@ function asc_footer_form($form_state) {
   }
 
   $form['submit'] = array(
-    '#type' => 'submit', 
+    '#type' => 'submit',
     '#value' => t('Save'),
   );
   return $form;
 }
 
-function asc_footer_get_fields() {
+/**
+ * Returns a list of fields in the ASC footer.
+ */
+
+function _asc_footer_get_fields() {
   $prefix = 'asc_footer_';
   $fields = array(
-    'Address_1' => variable_get($prefix . 'Address_1'),
-    'Address_2' => variable_get($prefix . 'Address_2'),
-    'City' => variable_get($prefix . 'City'),
-    'State' => variable_get($prefix . 'State'),
-    'Zip' => variable_get($prefix . 'Zip'),
-    'Phone' => variable_get($prefix . 'Phone'),
-    'Fax' => variable_get($prefix . 'Fax'),
-    'E_mail' => variable_get($prefix . 'E_mail'),
-    'Link_1_Text' => variable_get($prefix . 'Link_1_Text'),
-    'Link_1_Description' => variable_get($prefix . 'Link_1_Desc'),
-    'Link_1_URL' => variable_get($prefix . 'Link_1_URL'),
-    'Link_2_Text' => variable_get($prefix . 'Link_2_Text'),
-    'Link_2_Description' => variable_get($prefix . 'Link_2_Desc'),
-    'Link_2_URL' => variable_get($prefix . 'Link_2_URL'),
-    'Link_3_Text' => variable_get($prefix . 'Link_3_Text'),
-    'Link_3_Description' => variable_get($prefix . 'Link_3_Desc'),
-    'Link_3_URL' => variable_get($prefix . 'Link_3_URL'),
+    'address_1' => variable_get($prefix . 'address_1'),
+    'address_2' => variable_get($prefix . 'address_2'),
+    'city' => variable_get($prefix . 'city'),
+    'state' => variable_get($prefix . 'state'),
+    'zip' => variable_get($prefix . 'zip'),
+    'phone' => variable_get($prefix . 'phone'),
+    'fax' => variable_get($prefix . 'fax'),
+    'e_mail' => variable_get($prefix . 'e_mail'),
+    'link_1_text' => variable_get($prefix . 'link_1_text'),
+    'link_1_description' => variable_get($prefix . 'link_1_desc'),
+    'link_1_url' => variable_get($prefix . 'link_1_url'),
+    'link_2_text' => variable_get($prefix . 'link_2_text'),
+    'link_2_description' => variable_get($prefix . 'link_2_desc'),
+    'link_2_url' => variable_get($prefix . 'link_2_url'),
+    'link_3_text' => variable_get($prefix . 'link_3_text'),
+    'link_3_description' => variable_get($prefix . 'link_3_desc'),
+    'link_3_url' => variable_get($prefix . 'link_3_url'),
   );
   return $fields;
 }
 
 /**
  * Form submission
-*/
-function asc_footer_form_submit(&$form, &$form_state){
-  $fields = asc_footer_get_fields();
+ */
+function asc_footer_form_submit (&$form, &$form_state){
+  $fields = _asc_footer_get_fields();
   foreach ($fields as $field => $value) {
-   variable_set('asc_footer_' . $field, $form_state['values'][$field]);
+    variable_set('asc_footer_' . $field, $form_state['values'][$field]);
   }
-  drupal_set_message('Your settings have been saved.');
+  drupal_set_message(t('Your settings have been saved.'));
 }
 
 /*
- * Implements hook_block_info
+ * Implements hook_block_info()
  */
 
 function asc_footer_block_info() {
@@ -119,13 +121,13 @@ function asc_footer_block_info() {
 }
 
 /*
- * Implements hook_block_view
+ * Implements hook_block_view()
  */
 
 function asc_footer_block_view($delta = '') {
   $block['subject'] = '';
 
-  $fields = asc_footer_get_fields();
+  $fields = _asc_footer_get_fields();
 
   $block['content'] = theme('asc_footer_block', $fields);
 
@@ -134,7 +136,7 @@ function asc_footer_block_view($delta = '') {
 
 
 /*
- * Implements hook_theme
+ * Implements hook_theme()
  */
 function asc_footer_theme() {
   return array(
