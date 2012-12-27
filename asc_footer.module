@@ -55,7 +55,7 @@ function asc_footer_form($form_state) {
   foreach ($fields as $field => $value) {
     $form[$field] = array(
       '#title' => check_plain($field),
-      '#description' => check_plain($field,
+      '#description' => check_plain($field),
       '#type' => 'textfield',
       '#default_value' => $value,
     );
