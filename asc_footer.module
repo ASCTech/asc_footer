@@ -80,7 +80,6 @@ function _asc_footer_get_fields() {
     'zip' => variable_get($prefix . 'zip'),
     'phone' => variable_get($prefix . 'phone'),
     'fax' => variable_get($prefix . 'fax'),
-    'e_mail' => variable_get($prefix . 'e_mail'),
     'link_1_text' => variable_get($prefix . 'link_1_text'),
     'link_1_description' => variable_get($prefix . 'link_1_desc'),
     'link_1_url' => variable_get($prefix . 'link_1_url'),
@@ -128,6 +127,7 @@ function asc_footer_block_view($delta = '') {
   $block['subject'] = '';
 
   $fields = _asc_footer_get_fields();
+  $fields['e_mail'] = variable_get('site_mail');
 
   $block['content'] = theme('asc_footer_block', $fields);
 
