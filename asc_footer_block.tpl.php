@@ -42,8 +42,8 @@
 <?php } ?>
 <p id="footer-privacy">
   <a href="http://artsandsciences.osu.edu/privacy-policy" title="Privacy Policy on the College of Arts and Sciences website.">Privacy Policy</a><br>
-  <a href="/contact" title="Contact page for questions, feedback or accessibility issues.">Questions, Feedback, Acccessibility</a>
-  <a href="/contact" title="iContact page for questions, feedback or accessibility issues." class="no-decoration">
+  <a href="/contact" title="Contact page for questions, feedback or accessibility issues.">Questions, Feedback, Accessibility</a>
+  <a href="/contact" title="Contact page for questions, feedback or accessibility issues." class="no-decoration">
     <img src="/profiles/asc/themes/q7/icons/access.png" alt="Contact page for questions, feedback or accessibility issues." title="Contact page for questions, feedback or accessibility issues." id="footer-accessibility-icon" width="20" height="20" />
   </a>
 </p>
