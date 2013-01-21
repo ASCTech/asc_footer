@@ -1,6 +1,6 @@
 <?php if ($address_1 != '') { ?>
 <p id="footer-Address">
-  <a href="/contact">Contact Us</a><br />
+  <a href="/contact" title="Contact page for questions, feedback or accessibility issues">Contact Us</a><br />
 <?php if ($address_1 != '') { ?>
   <?php print $address_1 ?><br />
 <?php } ?>
