@@ -81,13 +81,13 @@ function _asc_footer_get_fields() {
     'phone' => variable_get($prefix . 'phone'),
     'fax' => variable_get($prefix . 'fax'),
     'link_1_text' => variable_get($prefix . 'link_1_text'),
-    'link_1_description' => variable_get($prefix . 'link_1_desc'),
+    'link_1_desc' => variable_get($prefix . 'link_1_desc'),
     'link_1_url' => variable_get($prefix . 'link_1_url'),
     'link_2_text' => variable_get($prefix . 'link_2_text'),
-    'link_2_description' => variable_get($prefix . 'link_2_desc'),
+    'link_2_desc' => variable_get($prefix . 'link_2_desc'),
     'link_2_url' => variable_get($prefix . 'link_2_url'),
     'link_3_text' => variable_get($prefix . 'link_3_text'),
-    'link_3_description' => variable_get($prefix . 'link_3_desc'),
+    'link_3_desc' => variable_get($prefix . 'link_3_desc'),
     'link_3_url' => variable_get($prefix . 'link_3_url'),
   );
   return $fields;
